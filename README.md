@@ -38,7 +38,7 @@ public class HomeController : Controller
         {
         
             await _smsSender.SendAsync();
-            await _smsSender.MultiSendAsync(28***7, new List<Destination>(){ new Destination("86", "173*****539"), new       Destination("86", "177****22") }, "", "267673");
+            await _smsSender.MultiSendAsync(28***7, new List<Destination>(){ new Destination("86", "173*****539"), new     Destination("86", "177****22") }, "", "267673");
             return View();
         }
 }
@@ -46,8 +46,11 @@ public class HomeController : Controller
 public interface ITencentSMSSender
 {
         Task MultiSendAsync(int tplId, List<Destination> destinations, string ext, params string[] @params);
+            
         Task MultiSendAsync(List<Destination> destinations, string message, string ext = "", bool normal = true);
+        
         Task SendAsync(int tplId, string nationCode, string destination, string ext, params string[] @params);
+        
         Task SendAsync(string nationCode, string destination, string message, string ext = "", bool normal = true);
 }
 
