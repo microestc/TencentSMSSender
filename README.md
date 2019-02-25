@@ -13,7 +13,7 @@ paket add Microestc.TencentSMSSender --version 1.0.0
 
 public void ConfigureServices(IServiceCollection services)
 {
-            services.AddTencentSMSSenderServices(options =>
+   services.AddTencentSMSSenderServices(options =>
             {
                 options.AppUrl = Configuration.GetSection("TencentSMSSettings").GetValue<string>("AppUrl");
                 options.AppId = Configuration.GetSection("TencentSMSSettings").GetValue<string>("AppId");
