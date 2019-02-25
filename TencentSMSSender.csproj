@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Microestc.TencentSMSSender</PackageId>
+    <Authors>Microestc</Authors>
+    <Company>Microestc Co.</Company>
+    <Description>tencentyun sms api service</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/microestc/TencentSMSSender/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>1.0.0</Copyright>
+    <PackageProjectUrl>https://github.com/microestc/TencentSMSSender</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/microestc/TencentSMSSender</RepositoryUrl>
+    <PackageReleaseNotes>TencentYun SMS API Service</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
